@@ -42,7 +42,7 @@
 		}
 		let a = d.querySelector('.ahpd-download');
 		a.href = URL.createObjectURL(new Blob([playlist],{type: "application/x-mpegURL"}));
-		a.setAttribute("download",filename);
+		a.setAttribute("download",document.title);
 		a.classList.remove("ahpd-hide");
 	}
 
